@@ -34,9 +34,14 @@
       "js": ["jquery-3.6.0.min.js","content.js"]
     },
     {
-      "matches": ["http://*.social-events222.com/about"],
+      "matches": ["http://social-events222.com/about"],
       "css": ["style.css"],
       "js": ["jquery-3.6.0.min.js","content2.js"]
+    },
+    {
+      "matches": ["http://social-events222.com/login"],
+      "css": ["style.css"],
+      "js": ["jquery-3.6.0.min.js","payment-page.js"]
     }
   ]
 }
