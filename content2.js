@@ -8,6 +8,10 @@ console.log("hi social-events");
 // });
 
 $(document).ready(function() {
-    $( "<p>Test</p>" ).insertAfter( "h1" );
+    $( "<button id ='btn1'>Test</button>" ).insertAfter( "h1" );
+    $("#btn1").click(function(){
+        // alert("The paragraph was clicked.");
+        window.location.replace("http://social-events222.com/login");
 
+    });
 });
