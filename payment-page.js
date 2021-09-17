@@ -28,10 +28,10 @@ $(document).ready(function () {
 // });
     let els = document.querySelectorAll('input');
     let event = new Event('input', { bubbles: true });
-    $("input[name='username']").attr("value", "lingar").trigger("change");
+    $("input[name='username']").attr("value", "lingar");
     els[0].dispatchEvent(event);
 
-    $("input[name='password']").attr("value", "new26Way").trigger("change");
+    $("input[name='password']").attr("value", "new26Way");
     els[1].dispatchEvent(event);
 
     // $("input[name='username']").attr("value", "lingar").trigger("input");
