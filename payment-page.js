@@ -1,6 +1,15 @@
 console.log("hi admin");
+// chrome.storage.local.set({ 'username': 'lin', 'password': '1234' });
+// chrome.storage.local.set({'username': 'lin'});
+//
+// console.log("usernmae = " + chrome.storage.get('username') + " |password = " + chrome.storage.local.get('password'));
 
-
+localStorage.setItem( 'username', 'lin');
+localStorage.setItem( 'password', '1234');
+console.log("username = " + localStorage.getItem('username') + " |password = " +localStorage.getItem('password'));
+chrome.storage.local.get("mykey", function(fetchedData) {
+    window.alert("fetched: " + fetchedData.mykey);
+});
 
 
 let insertData = function () {
@@ -19,6 +28,9 @@ let insertData = function () {
 function clickButton(){
     // alert("hi")
     $("button").click();
+
+
+
 }
 
 $(document).ready(function(){
