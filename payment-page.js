@@ -3,7 +3,7 @@ console.log("hi admin");
 
 
 
-let changes = function () {
+let insertData = function () {
     // alert("hi11");
 
     let els = document.querySelectorAll('input');
@@ -16,17 +16,18 @@ let changes = function () {
     // return  Promise.resolve();
 
 }
-function func1(){
+function clickButton(){
     // alert("hi")
     $("button").click();
 }
 
 $(document).ready(function(){
     let callbacks = $.Callbacks();
-    callbacks.add(changes);
-    callbacks.add(func1);
+    callbacks.add(insertData);
+    callbacks.add(clickButton);
+    //this will fire the callback in the correct order
     callbacks.fire();
-    callbacks.fire();
+    // callbacks.fire();
 
 
 
