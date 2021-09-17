@@ -7,8 +7,14 @@ console.log("hi admin");
 localStorage.setItem( 'username', 'lin');
 localStorage.setItem( 'password', '1234');
 console.log("username = " + localStorage.getItem('username') + " |password = " +localStorage.getItem('password'));
-chrome.storage.local.get("mykey", function(fetchedData) {
-    window.alert("fetched: " + fetchedData.mykey);
+// chrome.storage.local.get(["mykey"], function(fetchedData) {
+//     window.alert("fetched: " + fetchedData.mykey);
+// });
+
+chrome.storage.local.get(function(fetchedData) {
+    console.log("fetched2: " + fetchedData.mykey);
+    console.log("fetched3: " + fetchedData.abc);
+
 });
 
 
