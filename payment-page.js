@@ -25,10 +25,7 @@ $(document).ready(function(){
     let callbacks = $.Callbacks();
     callbacks.add(insertData);
     callbacks.add(clickButton);
-    //this will fire the callback in the correct order
+
+    //this will fire the callbacks in the correct order
     callbacks.fire();
-    // callbacks.fire();
-
-
-
 });
